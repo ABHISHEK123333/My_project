@@ -11,5 +11,5 @@ const Orderschema=new mongoose.Schema({
         required: true,
     },
 });
-module.exports=mongoose.model("order",Orderschema);
+module.exports=mongoose.model('order',Orderschema);
 

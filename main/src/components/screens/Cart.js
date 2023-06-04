@@ -22,6 +22,7 @@ export default function Cart(){
       }
       );
       const json=await response.json();
+     
       if(json.success){
         dispatch({type:"DROP"})
       }
