@@ -25,7 +25,7 @@ const PasswordReset = () => {
                 position: "top-center"
             });
         } else {
-            const res = await fetch("http://localhost:5000/sendpasswordlink", {
+            const res = await fetch("http://localhost:5000/api/sendpasswordlink", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
