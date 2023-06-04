@@ -6,10 +6,7 @@ const path =require('path');
 const { Dir } = require('fs');
 require("./connection/db.js");
 app.use(cors());
-app.use(express.static(path.join(__dirname,'./main/build')));
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,'./main/build/index.html'));
-})
+
 app.use(express.json());
 
 app.use("/api",require("./route/router.js"));
